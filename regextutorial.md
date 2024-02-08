@@ -57,7 +57,13 @@ Specifies how many characters a string must present in the input for a match. Qu
 
 ### Character Classes
 
-### The OR Operator
+### OR Operator
+ OR operators are `| or []`.
+- Example: 
+```
+a(b|c) :matches a string that has 'a' followed by 'b' or 'c'.
+a[bc]  :matches a string that has 'a' but not capture 'b' or 'c'.
+```
 
 ### Flags
 
