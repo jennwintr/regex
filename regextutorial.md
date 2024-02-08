@@ -41,6 +41,15 @@ Anchors are asserted at a particular place in the search.  It allows the user to
 ```
 
 ### Quantifiers
+Specifies how many characters a string must present in the input for a match. Quantifiers are `* + ? and {}`.
+- Example: 
+```
+- abc* :match a string that has 'ab' followed by zero or more 'c'.
+- abc+  :match a string that has 'ab' followed by one more 'c'.
+- abc?  :match a string that has 'ab' folllowed by zero or one 'c'.
+- abc{2}   :match a string that has 'ab' followed by 2 'c'.
+- a(bc)*   :match a string that has 'a' followed by zero or more copies of 'bc'.  
+```
 
 ### Grouping Constructs
 
