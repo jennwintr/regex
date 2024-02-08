@@ -1,10 +1,18 @@
-# Title (replace with your title)
-
-Introductory paragraph (replace this with your text)
+# Regex
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+Regex, also known as regular expressions, are patterns used to match character combinations in strings.  It is useful in extracting information from any text when it is included in a code or search algorithms. 
+- Example: regex code to match an email address:
+```
+ /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+```
+
+Search pattern for regex has boundaries by 2 slash characters `/`.
+- For example: 
+```
+/abc/
+```
 
 ## Table of Contents
 
@@ -20,6 +28,17 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
+
+Anchors are asserted at a particular place in the search.  It allows the user to match strings that begin or end  with certain characters.
+- `^` beginning of string
+- `$` end of string
+- Example:  
+```
+- ^The :match any string that starts with 'The'.
+- End$  :match any string the ends with 'End'.
+- ^The End$ :match exact string.
+- hello  :match any string with the exact text 'hello' 
+```
 
 ### Quantifiers
 
