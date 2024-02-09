@@ -56,6 +56,17 @@ Specifies how many characters a string must present in the input for a match. Qu
 ### Bracket Expressions
 
 ### Character Classes
+ Character classes distinguishes different kinds of characters such as letters and numbers. 
+```
+- [] - one character:
+   - Ex: [abc] means 'a' or 'b' or 'c'
+- \d :matches one numerical character from [0-9]
+- \w :matches one character from [a-z]
+- \s :matches white space character
+- \D :matches a single non-digit character
+- \W :matches a single non-character that is 'a-z'
+- \S :matches a single non-white space
+```
 
 ### OR Operator
  OR operators are `| or []`.
