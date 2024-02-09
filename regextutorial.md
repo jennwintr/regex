@@ -77,6 +77,17 @@ a[bc]  :matches a string that has 'a' but not capture 'b' or 'c'.
 ```
 
 ### Flags
+A flag value is added at the end of the slash character 
+- **g** : global, which does not return after the first match.  It restarts the after the end of the last search.
+- **m** : multi-line, enable with ^ and $. This will match the start and end of a line.
+- **i** : insensitive, which makes the whole expression case-insensitive
+
+Example: 
+```
+- /Hi/g  :matches all the 'Hi'
+- /Hi/m  :matches the beginning and ending of each line with 'Hi'
+- /Hi/i  :matches all 'hi' regardless if the letters are upper or lowercase 
+```
 
 ### Character Escapes
 
