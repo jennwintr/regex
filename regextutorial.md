@@ -69,6 +69,19 @@ Example:
 [abc] means 'a' or 'b' or 'c'.
 ```
 
+### Greedy and Lazy Match
+Quantifiers,` * + {}`, are greedy operators.  They will match as much as possible.
+Example:
+```
+"This is a <div>simple div</div> test."
+   - <.+> will show a match of <div>simple div</div>
+```
+
+To make a Lazy match, you can add a ?  operator.  
+```
+Using the above example, a search with <.+?> will return just the div tag, <div> and </div>
+```
+
 ### Character Classes
  Character classes distinguishes different kinds of characters such as letters and numbers. 
 ```
