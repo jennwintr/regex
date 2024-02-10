@@ -86,6 +86,11 @@ Boundaries are the places between characters, like a wall between adjacent chara
 - `\b`  :matches positions where one side is a word character and the other side is not a word character.
 - `\B`,  matches all positions where `\b` doesn't match.
 
+### Back-references
+- `\1`, matches the same text that was matched by the first capturing group.
+- `\2`, matches the same text that was matched by the second capturing group.
+- The same goes for `\3`, `\4` and etc.
+
 ### Character Classes
  Character classes distinguishes different kinds of characters such as letters and numbers. 
 ```
