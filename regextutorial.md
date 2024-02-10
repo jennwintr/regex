@@ -51,7 +51,16 @@ Specifies how many characters a string must present in the input for a match. Qu
 - a(bc)*   :match a string that has 'a' followed by zero or more copies of 'bc'.  
 ```
 
-### Grouping Constructs
+### Grouping and Capturing
+- `()` :this operator is used to extract information from strings or data. Groups will be shown in an array. 
+- `(?:)`  :using `?:` disables the capturing group
+- `(?<>)`  :using `?<>` puts a name to the group
+
+Example:
+```
+- a(bc)  :creates a capturing group with 'bc'
+- a(?<food>bc)  :?<food> named the group 'food'
+```
 
 ### Bracket Expressions
 
