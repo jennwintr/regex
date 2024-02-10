@@ -81,6 +81,10 @@ To make a Lazy match, you can add a ?  operator.
 ```
 Using the above example, a search with <.+?> will return just the div tag, <div> and </div>
 ```
+### Boundaries
+Boundaries are the places between characters, like a wall between adjacent characters.
+- `\b`  :matches positions where one side is a word character and the other side is not a word character.
+- `\B`,  matches all positions where `\b` doesn't match.
 
 ### Character Classes
  Character classes distinguishes different kinds of characters such as letters and numbers. 
