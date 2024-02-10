@@ -63,6 +63,11 @@ Example:
 ```
 
 ### Bracket Expressions
+`[]`, means exactly one character.
+Example:  
+```
+[abc] means 'a' or 'b' or 'c'.
+```
 
 ### Character Classes
  Character classes distinguishes different kinds of characters such as letters and numbers. 
